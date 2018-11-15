@@ -1,0 +1,6 @@
+--------------------------------------------------------
+--  Constraints for Table Z_T_RP_RESPOSTESCAMPSESPECIALS
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_RESPOSTESCAMPSESPECIALS" MODIFY ("ASPECTEID" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_RESPOSTESCAMPSESPECIALS" MODIFY ("RESPOSTACAMPSESPECIALSID" NOT NULL ENABLE);

@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table Z_B99_ADRECA
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_B99_ADRECA" MODIFY ("USUARI_CREACIO" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_B99_ADRECA" MODIFY ("DATA_CREACIO" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_B99_ADRECA" MODIFY ("NOM_CARRER" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_B99_ADRECA" MODIFY ("ID" NOT NULL ENABLE);

@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table ESPAI_ACTE
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."ESPAI_ACTE" ADD CONSTRAINT "FKESPAI_ACTE376237" FOREIGN KEY ("PLANTILLA_ID")
+	  REFERENCES "SINTAGMA_U"."DM_PLANTILLA_ESPAI" ("ID") ENABLE;
+  ALTER TABLE "SINTAGMA_U"."ESPAI_ACTE" ADD CONSTRAINT "FKESPAI_ACTE423341" FOREIGN KEY ("ACTE_ID")
+	  REFERENCES "SINTAGMA_U"."ACTE" ("ID") ENABLE;

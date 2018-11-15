@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table Z_T_SIAP_COSTOS_OAS
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_T_SIAP_COSTOS_OAS" MODIFY ("IMPORT" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_SIAP_COSTOS_OAS" MODIFY ("REFDOC" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_SIAP_COSTOS_OAS" MODIFY ("DATA" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_SIAP_COSTOS_OAS" MODIFY ("ID" NOT NULL ENABLE);

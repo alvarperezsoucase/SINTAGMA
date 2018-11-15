@@ -1,0 +1,7 @@
+--------------------------------------------------------
+--  Constraints for Table Z_SG023_TIPUS_ACTE_RESTANTES
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_SG023_TIPUS_ACTE_RESTANTES" MODIFY ("DESCRIPCIO" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_SG023_TIPUS_ACTE_RESTANTES" MODIFY ("CODI" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_SG023_TIPUS_ACTE_RESTANTES" MODIFY ("ID" NOT NULL ENABLE);

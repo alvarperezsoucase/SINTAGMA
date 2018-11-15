@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table A1_CONVIDAT_ZONA
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."A1_CONVIDAT_ZONA" ADD CONSTRAINT "A1_FKCONVIDAT_Z173948" FOREIGN KEY ("CONVIDAT_ID")
+	  REFERENCES "SINTAGMA_U"."A1_CONVIDAT" ("ID") ENABLE;
+  ALTER TABLE "SINTAGMA_U"."A1_CONVIDAT_ZONA" ADD CONSTRAINT "A1_FKCONVIDAT_Z742497" FOREIGN KEY ("ZONA_ID")
+	  REFERENCES "SINTAGMA_U"."A1_ZONA" ("ID") ENABLE;

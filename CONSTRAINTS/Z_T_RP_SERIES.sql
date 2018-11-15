@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table Z_T_RP_SERIES
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_SERIES" MODIFY ("INSTALACIOID" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_SERIES" MODIFY ("ESVALORDEFECTE" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_SERIES" MODIFY ("NOM" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_SERIES" MODIFY ("SERIEID" NOT NULL ENABLE);

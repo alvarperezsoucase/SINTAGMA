@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table Z_T_RP_DECISIO
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_DECISIO" MODIFY ("ESVALORDEFECTE" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_DECISIO" MODIFY ("INSTALACIOID" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_DECISIO" MODIFY ("NOM" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_DECISIO" MODIFY ("DECISIOID" NOT NULL ENABLE);

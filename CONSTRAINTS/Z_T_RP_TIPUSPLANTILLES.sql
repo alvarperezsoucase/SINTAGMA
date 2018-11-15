@@ -1,0 +1,7 @@
+--------------------------------------------------------
+--  Constraints for Table Z_T_RP_TIPUSPLANTILLES
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_TIPUSPLANTILLES" MODIFY ("NOM" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_TIPUSPLANTILLES" MODIFY ("INSTALACIOID" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_TIPUSPLANTILLES" MODIFY ("TIPUSPLANTILLAID" NOT NULL ENABLE);

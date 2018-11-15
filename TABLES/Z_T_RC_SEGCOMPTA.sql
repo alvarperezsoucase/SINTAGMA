@@ -1,0 +1,15 @@
+--------------------------------------------------------
+--  DDL for Table Z_T_RC_SEGCOMPTA
+--------------------------------------------------------
+
+  CREATE TABLE "SINTAGMA_U"."Z_T_RC_SEGCOMPTA" 
+   (	"ID_RIS" VARCHAR2(10 BYTE), 
+	"ID_COMPTA" VARCHAR2(5 BYTE), 
+	"LITERAL" VARCHAR2(20 BYTE), 
+	"COMPTADOR" NUMBER(8,0), 
+	"USUARI" VARCHAR2(10 BYTE), 
+	"DATA_B" DATE
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  TABLESPACE "T_SINTAGMA" ;

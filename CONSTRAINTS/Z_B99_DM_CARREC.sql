@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table Z_B99_DM_CARREC
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_B99_DM_CARREC" MODIFY ("USUARI_CREACIO" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_B99_DM_CARREC" MODIFY ("DATA_CREACIO" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_B99_DM_CARREC" MODIFY ("DESCRIPCIO" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_B99_DM_CARREC" MODIFY ("ID" NOT NULL ENABLE);

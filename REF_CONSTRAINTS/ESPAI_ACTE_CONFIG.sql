@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table ESPAI_ACTE_CONFIG
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."ESPAI_ACTE_CONFIG" ADD CONSTRAINT "FKESPAI_ACTE362713" FOREIGN KEY ("ESPAI_ACTE_ID")
+	  REFERENCES "SINTAGMA_U"."ESPAI_ACTE" ("ID") ENABLE;
+  ALTER TABLE "SINTAGMA_U"."ESPAI_ACTE_CONFIG" ADD CONSTRAINT "FKZONA1" FOREIGN KEY ("ZONA_ID")
+	  REFERENCES "SINTAGMA_U"."ZONA" ("ID") ENABLE;

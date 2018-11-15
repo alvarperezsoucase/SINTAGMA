@@ -1,0 +1,15 @@
+--------------------------------------------------------
+--  DDL for Table Z_TMP_VIPS_U_ORGA_UBICACIO
+--------------------------------------------------------
+
+  CREATE TABLE "SINTAGMA_U"."Z_TMP_VIPS_U_ORGA_UBICACIO" 
+   (	"N_ORGA_ACTE" NUMBER(10,0), 
+	"UB1" VARCHAR2(50 BYTE), 
+	"UB2" VARCHAR2(50 BYTE), 
+	"UB3" VARCHAR2(50 BYTE), 
+	"UB4" VARCHAR2(50 BYTE), 
+	"UB5" VARCHAR2(50 BYTE)
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  TABLESPACE "T_SINTAGMA" ;

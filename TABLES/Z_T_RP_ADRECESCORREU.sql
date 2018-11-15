@@ -1,0 +1,12 @@
+--------------------------------------------------------
+--  DDL for Table Z_T_RP_ADRECESCORREU
+--------------------------------------------------------
+
+  CREATE TABLE "SINTAGMA_U"."Z_T_RP_ADRECESCORREU" 
+   (	"INSTALACIOID" NUMBER(38,0), 
+	"ADRECACORREUID" NUMBER(38,0), 
+	"ADRECA" VARCHAR2(100 BYTE)
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  TABLESPACE "T_SINTAGMA" ;

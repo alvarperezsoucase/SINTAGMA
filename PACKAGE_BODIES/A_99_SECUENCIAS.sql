@@ -1,0 +1,410 @@
+--------------------------------------------------------
+--  DDL for Package Body A_99_SECUENCIAS
+--------------------------------------------------------
+
+  CREATE OR REPLACE PACKAGE BODY "SINTAGMA_U"."A_99_SECUENCIAS" AS
+
+  PROCEDURE SEQ_ACOMPANYANT IS
+        Max_SEQ_ACOMPANYANT number;       
+  BEGIN
+    
+     SELECT MAX(ID) INTO Max_SEQ_ACOMPANYANT FROM ACOMPANYANT;
+            
+     Max_SEQ_ACOMPANYANT := Max_SEQ_ACOMPANYANT +1;
+            
+     SET_SEQ('SEQ_ACOMPANYANT',Max_SEQ_ACOMPANYANT);    
+    
+  END SEQ_ACOMPANYANT;
+
+
+
+  PROCEDURE SEQ_ADRECA IS
+        Max_SEQ_ADRECA number;       
+  BEGIN
+    
+     SELECT MAX(ID) INTO Max_SEQ_ADRECA FROM ADRECA;
+            
+     Max_SEQ_ADRECA := Max_SEQ_ADRECA +1;
+            
+     SET_SEQ('SEQ_ADRECA',Max_SEQ_ADRECA);     
+   
+  END SEQ_ADRECA;
+
+
+
+  PROCEDURE SEQ_AGENDA_DELEGACIO IS   
+        Max_SEQ_AGENDA_DELEGACIO number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_AGENDA_DELEGACIO FROM AGENDA_DELEGACIO;
+            
+     Max_SEQ_AGENDA_DELEGACIO := Max_SEQ_AGENDA_DELEGACIO +1;
+            
+     SET_SEQ('SEQ_AGENDA_DELEGACIO',Max_SEQ_AGENDA_DELEGACIO);    
+     
+     
+  END;  
+  
+  
+  PROCEDURE SEQ_CONTACTE IS   
+        Max_SEQ_CONTACTE number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_CONTACTE FROM CONTACTE;
+            
+     Max_SEQ_CONTACTE := Max_SEQ_CONTACTE +1;
+            
+     SET_SEQ('SEQ_CONTACTE',Max_SEQ_CONTACTE);    
+     
+     
+  END;  
+  
+  
+  PROCEDURE SEQ_CONTACTE_CLASSIFICACIO IS   
+        Max_SEQ_CONTACTE_CLASSIFICACIO number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_CONTACTE_CLASSIFICACIO FROM CONTACTE_CLASSIFICACIO;
+            
+     Max_SEQ_CONTACTE_CLASSIFICACIO := Max_SEQ_CONTACTE_CLASSIFICACIO +1;
+            
+     SET_SEQ('SEQ_CONTACTE_CLASSIFICACIO',Max_SEQ_CONTACTE_CLASSIFICACIO);         
+     
+  END;  
+  
+  
+  PROCEDURE SEQ_CONTACTE_CORREU IS   
+        Max_SEQ_CONTACTE_CORREU number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_CONTACTE_CORREU FROM CONTACTE_CORREU;
+            
+     Max_SEQ_CONTACTE_CORREU := Max_SEQ_CONTACTE_CORREU +1;
+            
+     SET_SEQ('SEQ_CONTACTE_CORREU',Max_SEQ_CONTACTE_CORREU);         
+     
+  END;  
+
+ 
+  PROCEDURE SEQ_CONTACTE_TELEFON IS   
+        Max_SEQ_CONTACTE_TELEFON number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_CONTACTE_TELEFON FROM CONTACTE_TELEFON;
+            
+     Max_SEQ_CONTACTE_TELEFON := Max_SEQ_CONTACTE_TELEFON +1;
+            
+     SET_SEQ('SEQ_CONTACTE_TELEFON',Max_SEQ_CONTACTE_TELEFON);
+     
+  END;  
+
+
+
+  PROCEDURE SEQ_CONVIDAT IS   
+        Max_SEQ_CONVIDAT number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_CONVIDAT FROM CONVIDAT;
+            
+     Max_SEQ_CONVIDAT := Max_SEQ_CONVIDAT +1;
+            
+     SET_SEQ('SEQ_CONVIDAT',Max_SEQ_CONVIDAT);         
+     
+  END;  
+
+
+  PROCEDURE SEQ_CONVIDAT_CORREU IS   
+        Max_SEQ_CONVIDAT_CORREU number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_CONVIDAT_CORREU FROM CONVIDAT_CORREU;
+            
+     Max_SEQ_CONVIDAT_CORREU := Max_SEQ_CONVIDAT_CORREU +1;
+            
+     SET_SEQ('SEQ_CONVIDAT_CORREU',Max_SEQ_CONVIDAT_CORREU);         
+     
+  END;
+  
+  PROCEDURE SEQ_DM_CARREC IS   
+        Max_SEQ_DM_CARREC number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_CARREC FROM DM_CARREC;
+            
+     Max_SEQ_DM_CARREC := Max_SEQ_DM_CARREC +1;
+            
+     SET_SEQ('SEQ_DM_CARREC',Max_SEQ_DM_CARREC);         
+     
+  END;
+  
+  PROCEDURE SEQ_DM_CLASSIFICACIO IS   
+        Max_SEQ_DM_CLASSIFICACIO number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_CLASSIFICACIO FROM DM_CLASSIFICACIO;
+            
+     Max_SEQ_DM_CLASSIFICACIO := Max_SEQ_DM_CLASSIFICACIO +1;
+            
+     SET_SEQ('SEQ_DM_CLASSIFICACIO',Max_SEQ_DM_CLASSIFICACIO);         
+     
+  END;
+  
+  
+  
+  PROCEDURE SEQ_DM_CONF_FUN_VISUALS IS
+        Max_SEQ_DM_CONF_FUN_VISUALS number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_CONF_FUN_VISUALS FROM DM_CONF_FUN_VISUALS;
+            
+     Max_SEQ_DM_CONF_FUN_VISUALS := Max_SEQ_DM_CONF_FUN_VISUALS +1;
+            
+     SET_SEQ('SEQ_DM_CONF_FUN_VISUALS',Max_SEQ_DM_CONF_FUN_VISUALS);
+     
+  END;
+  
+  
+  
+  PROCEDURE SEQ_DM_DESTINATARI_PERSONA IS   
+        Max_SEQ_DM_DESTINATARI_PERSONA number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_DESTINATARI_PERSONA FROM DM_DESTINATARI_PERSONA;
+            
+     Max_SEQ_DM_DESTINATARI_PERSONA := Max_SEQ_DM_DESTINATARI_PERSONA +1;
+            
+     SET_SEQ('SEQ_DM_DESTINATARI_PERSONA',Max_SEQ_DM_DESTINATARI_PERSONA);
+     
+  END;
+  
+  
+  PROCEDURE SEQ_DM_ENTITAT IS   
+        Max_SEQ_DM_ENTITAT number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_ENTITAT FROM DM_ENTITAT;
+            
+     Max_SEQ_DM_ENTITAT := Max_SEQ_DM_ENTITAT +1;
+            
+     SET_SEQ('SEQ_DM_ENTITAT',Max_SEQ_DM_ENTITAT);
+     
+  END;
+  
+  
+  
+  PROCEDURE SEQ_DM_ESTAT_ACTE IS   
+        Max_SEQ_DM_ESTAT_ACTE number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_ESTAT_ACTE FROM DM_ESTAT_ACTE;
+            
+     Max_SEQ_DM_ESTAT_ACTE := Max_SEQ_DM_ESTAT_ACTE +1;
+            
+     SET_SEQ('SEQ_DM_ESTAT_ACTE',Max_SEQ_DM_ESTAT_ACTE);
+     
+  END;
+  
+  
+  
+  
+  PROCEDURE SEQ_DM_ESTAT_ELEMENT IS   
+        Max_SEQ_DM_ESTAT_ELEMENT number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_ESTAT_ELEMENT FROM DM_ESTAT_ELEMENT;
+            
+     Max_SEQ_DM_ESTAT_ELEMENT := Max_SEQ_DM_ESTAT_ELEMENT +1;
+            
+     SET_SEQ('SEQ_DM_ESTAT_ELEMENT',Max_SEQ_DM_ESTAT_ELEMENT);
+     
+  END;
+  
+  
+  
+  PROCEDURE SEQ_DM_ORIGEN_ELEMENT IS   
+        Max_SEQ_DM_ORIGEN_ELEMENT number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_ORIGEN_ELEMENT FROM DM_ORIGEN_ELEMENT;
+            
+     Max_SEQ_DM_ORIGEN_ELEMENT := Max_SEQ_DM_ORIGEN_ELEMENT +1;
+            
+     SET_SEQ('SEQ_DM_ORIGEN_ELEMENT',Max_SEQ_DM_ORIGEN_ELEMENT);
+     
+  END;
+  
+  
+  PROCEDURE SEQ_DM_PAS_ACCIO IS   
+        Max_SEQ_DM_PAS_ACCIO number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_PAS_ACCIO FROM DM_PAS_ACCIO;
+            
+     Max_SEQ_DM_PAS_ACCIO := Max_SEQ_DM_PAS_ACCIO +1;
+            
+     SET_SEQ('SEQ_DM_PAS_ACCIO',Max_SEQ_DM_PAS_ACCIO);
+     
+  END;
+  
+  
+  PROCEDURE SEQ_DM_PRIORITAT_ELEMENT IS   
+        Max_SEQ_DM_PRIORITAT_ELEMENT number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_PRIORITAT_ELEMENT FROM DM_PRIORITAT_ELEMENT;
+            
+     Max_SEQ_DM_PRIORITAT_ELEMENT := Max_SEQ_DM_PRIORITAT_ELEMENT +1;
+            
+     SET_SEQ('SEQ_DM_PRIORITAT_ELEMENT',Max_SEQ_DM_PRIORITAT_ELEMENT);
+     
+  END;
+  
+  
+  PROCEDURE SEQ_DM_SERIE IS   
+        Max_SEQ_DM_SERIE number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_SERIE FROM DM_SERIE;
+            
+     Max_SEQ_DM_SERIE := Max_SEQ_DM_SERIE +1;
+            
+     SET_SEQ('SEQ_DM_SERIE',Max_SEQ_DM_SERIE);
+     
+  END;
+
+  
+  PROCEDURE SEQ_DM_TIPUS_ACCIO IS   
+        Max_SEQ_DM_TIPUS_ACCIO number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_TIPUS_ACCIO FROM DM_TIPUS_ACCIO;
+            
+     Max_SEQ_DM_TIPUS_ACCIO := Max_SEQ_DM_TIPUS_ACCIO +1;
+            
+     SET_SEQ('SEQ_DM_TIPUS_ACCIO',Max_SEQ_DM_TIPUS_ACCIO);
+     
+  END;
+  
+
+  PROCEDURE SEQ_DM_TIPUS_ACTE IS   
+        Max_SEQ_DM_TIPUS_ACTE number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_TIPUS_ACTE FROM DM_TIPUS_ACTE;
+            
+     Max_SEQ_DM_TIPUS_ACTE := Max_SEQ_DM_TIPUS_ACTE +1;
+            
+     SET_SEQ('SEQ_DM_TIPUS_ACTE',Max_SEQ_DM_TIPUS_ACTE);
+     
+  END;
+
+  
+  PROCEDURE SEQ_DM_TIPUS_AGENDA IS   
+        Max_SEQ_DM_TIPUS_AGENDA number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_TIPUS_AGENDA FROM DM_TIPUS_AGENDA;
+            
+     Max_SEQ_DM_TIPUS_AGENDA := Max_SEQ_DM_TIPUS_AGENDA +1;
+            
+     SET_SEQ('SEQ_DM_TIPUS_AGENDA',Max_SEQ_DM_TIPUS_AGENDA);
+     
+  END;
+  
+
+  PROCEDURE SEQ_DM_TIPUS_DATA IS   
+        Max_SEQ_DM_TIPUS_DATA number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_TIPUS_DATA FROM DM_TIPUS_DATA;
+            
+     Max_SEQ_DM_TIPUS_DATA := Max_SEQ_DM_TIPUS_DATA +1;
+            
+     SET_SEQ('SEQ_DM_TIPUS_DATA',Max_SEQ_DM_TIPUS_DATA);
+     
+  END;
+
+
+  PROCEDURE SEQ_DM_TIPUS_TEMA IS   
+        Max_SEQ_DM_TIPUS_TEMA number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DM_TIPUS_TEMA FROM DM_TIPUS_TEMA;
+            
+     Max_SEQ_DM_TIPUS_TEMA := Max_SEQ_DM_TIPUS_TEMA +1;
+            
+     SET_SEQ('SEQ_DM_TIPUS_TEMA',Max_SEQ_DM_TIPUS_TEMA);
+     
+  END;
+  
+  PROCEDURE SEQ_DM_TRACTAMENT AS
+        Max_SEQ_DM_TRACTAMENT number;       
+  BEGIN
+    
+     SELECT MAX(ID) INTO Max_SEQ_DM_TRACTAMENT FROM DM_TRACTAMENT;
+            
+     Max_SEQ_DM_TRACTAMENT := Max_SEQ_DM_TRACTAMENT +1;
+            
+     SET_SEQ('SEQ_DM_TRACTAMENT',Max_SEQ_DM_TRACTAMENT);    
+  
+  END;
+  
+  
+    
+  PROCEDURE SEQ_DOSSIER IS   
+        Max_SEQ_DOSSIER number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_DOSSIER FROM DOSSIER;
+            
+     Max_SEQ_DOSSIER := Max_SEQ_DOSSIER +1;
+            
+     SET_SEQ('SEQ_DOSSIER',Max_SEQ_DOSSIER);
+     
+  END;
+  
+  
+  
+  PROCEDURE SEQ_REGISTRE IS   
+        Max_SEQ_REGISTRE number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_REGISTRE FROM REGISTRE;
+            
+     Max_SEQ_REGISTRE := Max_SEQ_REGISTRE +1;
+            
+     SET_SEQ('SEQ_REGISTRE',Max_SEQ_REGISTRE);
+     
+  END;
+
+
+
+  PROCEDURE SEQ_SUBJECTE IS   
+        Max_SEQ_SUBJECTE number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_SUBJECTE FROM SUBJECTE;
+            
+     Max_SEQ_SUBJECTE := Max_SEQ_SUBJECTE +1;
+            
+     SET_SEQ('SEQ_SUBJECTE',Max_SEQ_SUBJECTE);
+     
+  END;
+
+
+
+  PROCEDURE SEQ_TITULAR_DINS IS   
+        Max_SEQ_TITULAR_DINS number;       
+  BEGIN
+  
+     SELECT MAX(ID) INTO Max_SEQ_TITULAR_DINS FROM TITULAR_DINS;
+            
+     Max_SEQ_TITULAR_DINS := Max_SEQ_TITULAR_DINS +1;
+            
+     SET_SEQ('SEQ_TITULAR_DINS',Max_SEQ_TITULAR_DINS);
+     
+  END;
+
+END A_99_SECUENCIAS;
+
+/

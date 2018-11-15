@@ -1,0 +1,14 @@
+--------------------------------------------------------
+--  DDL for View VIEW_DM_ENTITAT_ACTE
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "SINTAGMA_U"."VIEW_DM_ENTITAT_ACTE" ("RESULT_ID", "RESULT_ENTITAT", "FILTER_ENTITAT", "FILTER_ACTE") AS 
+  SELECT ROWNUM AS RESULT_ID, RESULT_ENTITAT, FILTER_ENTITAT, FILTER_ACTE FROM (
+SELECT
+        MAX(C.ENTITAT) AS RESULT_ENTITAT,
+        fn_convert_to_vn (C.ENTITAT) AS FILTER_ENTITAT,
+        C.ACTE_ID AS FILTER_ACTE
+FROM CONVIDAT C
+GROUP BY C.ACTE_ID, fn_convert_to_vn (C.ENTITAT)
+ORDER BY RESULT_ENTITAT ASC)
+;

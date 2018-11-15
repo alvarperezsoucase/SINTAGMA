@@ -1,0 +1,92 @@
+--------------------------------------------------------
+--  DDL for Package D_01_CONTACTES_RISPLUS
+--------------------------------------------------------
+
+  CREATE OR REPLACE PACKAGE "SINTAGMA_U"."D_01_CONTACTES_RISPLUS" AS 
+
+  /* TODO enter package declarations (types, exceptions, methods etc) here */ 
+
+   ConstCarrec CONSTANT integer:=20000; --Inicio 5962
+   ConstTractament CONSTANT integer:=300; --105
+   ConstEntitat CONSTANT integer:=2000000; -- 1001446 entitat  
+   ConstEntitatTrucada CONSTANT integer:=2000000; -- 1527860 entitat  
+   ConstAdreca CONSTANT integer:=50000; --25786
+   ConstSubjecte CONSTANT integer:=2000000; --1018039
+   ConstContacte CONSTANT integer:=1000000;  --376853
+   ConstContacteCorreu CONSTANT integer:=1000000; -- 15565
+   ConstContacteTelefon CONSTANT integer:=50000; --31066
+   
+   ConstALCALDIA CONSTANT integer:=1; 
+   ConstPROTOCOL CONSTANT integer:=2;    
+      
+   ConstPersonal CONSTANT integer:=1; 
+   ConstProfesional CONSTANT integer:=2; 
+   
+   ConstSebjectePersona CONSTANT integer:=1; 
+   ConstSebjecteEntitat CONSTANT integer:=2; 
+   
+   ConstVisibilitatPublica CONSTANT integer:=1; -- Pública
+   ConstVisibilitatPrivada CONSTANT integer:=2; -- Privada
+   ConstVisibilitatAlcaldia CONSTANT integer:=3; -- Alcaldía
+   
+   
+
+    PROCEDURE RESETEATOR_TABLAS;
+--    PROCEDURE RESETEATOR_SECUENCIAS;
+
+
+    PROCEDURE D01_EXTRAER_TRACTAMENT;
+    PROCEDURE D02_DM_TRACTAMENTS;
+    
+    PROCEDURE D03_EXTRAER_CARREC;
+    PROCEDURE D04_DM_CARREC;
+    
+    PROCEDURE D10_ENTITAT_EXISTENTES;
+    PROCEDURE ERR_CONTACTES_EMPRESA_NULL;
+    PROCEDURE D11_A_ENTITAT_NO_EXISTENTES;
+    PROCEDURE D11_B_ENTITAT_NO_EXISTENTES;
+    PROCEDURE D15_ENTITAT_CONTACTES;
+    PROCEDURE D16_DM_ENTITAT;
+    
+  
+    PROCEDURE D20_SUBJECTES_PERSONAS_UNICOS;
+--    PROCEDURE D21_SUBJECTES_PERSONAS_CONTAC;
+    
+    PROCEDURE D22_SUBJECTES_ENTITATS_UNICS;
+--    PROCEDURE D23_SUBJECTE_ENTITAT_CONTACTE;
+    
+    PROCEDURE D24_SUBJECTES_CARREC_UNIC;
+--    PROCEDURE D25_SUBJECTE_CARREC_CONTACTE;
+    
+    
+    PROCEDURE D26_SUBJECTES_UNION;
+    PROCEDURE D27_SUBJECTES_RISPLUS;
+    
+--    PROCEDURE ERROR_SUBJECTES_NULL;
+    
+    
+
+    --procedure D25_SUBJECTES;
+
+   PROCEDURE D30_CONTACTES_SUBJECTES;
+   
+   PROCEDURE D40_ADRECA_UNICAS;
+   PROCEDURE ERR_ADRECA_RISPLUS;
+   PROCEDURE D41_ADRECA_CONTACTE;
+   PROCEDURE D42_AUX_ADRECA;
+   
+
+   PROCEDURE D50_AUX_CONTACTES;
+   
+   
+   PROCEDURE D60_CORREUS_CONTACTES;
+   PROCEDURE D61_CORREUS_PRINCIPALES;
+   PROCEDURE D62_CORREOS_CONTACTOS;
+   
+   PROCEDURE D70_TELEFONS_NUMERICS;
+   PROCEDURE D71_TELEFON_PRINCIPAL;
+   PROCEDURE D72_CONTACTE_TELEFON;
+
+END D_01_CONTACTES_RISPLUS;
+
+/

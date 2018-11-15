@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table A1_DM_PAS_ACCIO
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."A1_DM_PAS_ACCIO" ADD CONSTRAINT "A1_FKDM_PAS_ACC332958" FOREIGN KEY ("AMBIT_ID")
+	  REFERENCES "SINTAGMA_U"."A1_DM_AMBIT" ("ID") ENABLE;
+  ALTER TABLE "SINTAGMA_U"."A1_DM_PAS_ACCIO" ADD CONSTRAINT "A1_FKDM_PAS_ACC433894" FOREIGN KEY ("TIPUS_ACCIO_ID")
+	  REFERENCES "SINTAGMA_U"."A1_DM_TIPUS_ACCIO" ("ID") ENABLE;

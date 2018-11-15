@@ -1,0 +1,7 @@
+--------------------------------------------------------
+--  Constraints for Table Z_T_RP_VALORSDEFECTE
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_VALORSDEFECTE" MODIFY ("INSTALACIOID" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_VALORSDEFECTE" MODIFY ("TIPUSELEMENT" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_VALORSDEFECTE" MODIFY ("VALORSDEFECTEID" NOT NULL ENABLE);

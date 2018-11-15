@@ -1,0 +1,7 @@
+--------------------------------------------------------
+--  Constraints for Table Z_T_SIAP_DOCUMENTS_GENERICS
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_T_SIAP_DOCUMENTS_GENERICS" MODIFY ("NOMFITXER" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_SIAP_DOCUMENTS_GENERICS" MODIFY ("DESCRIPCIO" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_SIAP_DOCUMENTS_GENERICS" MODIFY ("ID" NOT NULL ENABLE);

@@ -1,0 +1,12 @@
+--------------------------------------------------------
+--  DDL for Table Z_SG131_CORREUS_PRINCIPALS
+--------------------------------------------------------
+
+  CREATE TABLE "SINTAGMA_U"."Z_SG131_CORREUS_PRINCIPALS" 
+   (	"IDVIP" NUMBER, 
+	"CORREU" VARCHAR2(120 CHAR), 
+	"PRINCIPAL" NUMBER
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  TABLESPACE "T_SINTAGMA" ;

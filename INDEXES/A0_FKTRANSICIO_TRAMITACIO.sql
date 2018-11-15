@@ -1,0 +1,7 @@
+--------------------------------------------------------
+--  DDL for Index A0_FKTRANSICIO_TRAMITACIO
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SINTAGMA_U"."A0_FKTRANSICIO_TRAMITACIO" ON "SINTAGMA_U"."A0_TRANSICIO_TRAMITACIO" ("ACCIO_ORIGEN_ID", "ACCIO_DESTI_ID", "AMBIT_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  TABLESPACE "T_SINTAGMA" ;

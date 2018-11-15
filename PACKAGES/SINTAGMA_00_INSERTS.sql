@@ -1,0 +1,88 @@
+--------------------------------------------------------
+--  DDL for Package SINTAGMA_00_INSERTS
+--------------------------------------------------------
+
+  CREATE OR REPLACE PACKAGE "SINTAGMA_U"."SINTAGMA_00_INSERTS" AS 
+
+  /* SE SUSTITUYE IDs originales por secuencias */  
+     ConstUsuari_CREACIO varchar2(10) := 'SYSTEM';
+
+
+
+PROCEDURE RESETEATOR_TABLAS; --OJO BORRAR TODAS LAS TABLAS.
+
+PROCEDURE CLASSIF_ACTIVES;
+
+PROCEDURE DM_AMBIT;
+
+PROCEDURE DM_CONF_FUN_VISUALS;
+--------------------------------------------------------
+-- TRUCADA
+--------------------------------------------------------
+
+PROCEDURE DM_ESTAT_TRUCADA;
+
+PROCEDURE DM_SENTIT_TRUCADA;
+
+--------------------------------------------------------
+-- CONTACTES
+--------------------------------------------------------
+
+PROCEDURE DM_TIPUS_TELEFON;
+
+PROCEDURE DM_TIPUS_SUBJECTE;
+
+PROCEDURE DM_PRIORITAT;
+
+PROCEDURE DM_TIPOLOGIA_OBSEQUI;
+
+PROCEDURE DM_OBSEQUI;
+
+PROCEDURE DM_VISIBILITAT;
+
+PROCEDURE DM_TIPUS_CONTACTE;
+
+PROCEDURE DM_IDIOMA;
+
+PROCEDURE DM_TIPOLOGIA_CLASSIFICACIO;
+
+
+
+PROCEDURE DM_AFECTA_AGENDA;
+
+PROCEDURE DM_TIPUS_AMBIT;
+
+PROCEDURE DM_BARRI;
+
+PROCEDURE DM_SECTOR;
+
+PROCEDURE DM_DECISIO_ASSISTENCIA;
+
+PROCEDURE DM_RAO;
+
+PROCEDURE DM_ARTICLE;
+
+
+
+--------------------------------------------------------
+-- ACTES
+--------------------------------------------------------
+
+PROCEDURE DM_ESTAT_CONFIRMACIO;
+
+PROCEDURE DM_TIPUS_VIA_INVITACIO;
+
+PROCEDURE DM_INICIATIVA_RESPOSTA;
+
+PROCEDURE DM_TIPUS_VIA_RESPOSTA;
+
+PROCEDURE DM_ESTAT_GESTIO_INVITACIO;
+
+PROCEDURE DM_ESTAT_GESTIO_ESPAIS;
+
+PROCEDURE DM_ESTAT_ELEMENT;
+
+
+END SINTAGMA_00_INSERTS;
+
+/

@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table A1_ASPECTE
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."A1_ASPECTE" ADD CONSTRAINT "A1_FKASPECTE57560" FOREIGN KEY ("TIPUS_TEMA_ID")
+	  REFERENCES "SINTAGMA_U"."A1_DM_TIPUS_TEMA" ("ID") ENABLE;
+  ALTER TABLE "SINTAGMA_U"."A1_ASPECTE" ADD CONSTRAINT "A1_FKASPECTE695500" FOREIGN KEY ("AMBIT_ID")
+	  REFERENCES "SINTAGMA_U"."A1_DM_AMBIT" ("ID") ENABLE;

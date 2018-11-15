@@ -1,0 +1,7 @@
+--------------------------------------------------------
+--  Constraints for Table Z_T_RP_ADRECESCORREU
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_ADRECESCORREU" MODIFY ("ADRECA" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_ADRECESCORREU" MODIFY ("ADRECACORREUID" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_ADRECESCORREU" MODIFY ("INSTALACIOID" NOT NULL ENABLE);

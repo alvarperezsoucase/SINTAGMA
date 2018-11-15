@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Constraints for Table Z_T_RP_SUBSERIES
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_SUBSERIES" MODIFY ("SERIEID" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_SUBSERIES" MODIFY ("ESVALORDEFECTE" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_SUBSERIES" MODIFY ("NOM" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_SUBSERIES" MODIFY ("SUBSERIEID" NOT NULL ENABLE);

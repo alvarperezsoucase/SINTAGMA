@@ -1,0 +1,8 @@
+--------------------------------------------------------
+--  Ref Constraints for Table A1_DOSSIER
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."A1_DOSSIER" ADD CONSTRAINT "A1_FKDOSSIER189288" FOREIGN KEY ("PREFIX_ANY_ID")
+	  REFERENCES "SINTAGMA_U"."A1_DM_PREFIX_ANY" ("ID") ENABLE;
+  ALTER TABLE "SINTAGMA_U"."A1_DOSSIER" ADD CONSTRAINT "A1_FKDOSSIER281181" FOREIGN KEY ("ASPECTE_ID")
+	  REFERENCES "SINTAGMA_U"."A1_ASPECTE" ("ID") ENABLE;

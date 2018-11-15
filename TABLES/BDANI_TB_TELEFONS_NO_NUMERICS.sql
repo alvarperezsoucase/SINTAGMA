@@ -1,0 +1,13 @@
+--------------------------------------------------------
+--  DDL for Table BDANI_TB_TELEFONS_NO_NUMERICS
+--------------------------------------------------------
+
+  CREATE TABLE "SINTAGMA_U"."BDANI_TB_TELEFONS_NO_NUMERICS" 
+   (	"ID_CONTACTE" NUMBER(*,0), 
+	"N_VIP" NUMBER(10,0), 
+	"TIPUS_TELEFON" NUMBER, 
+	"TELEFON" VARCHAR2(14 BYTE)
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  TABLESPACE "T_SINTAGMA" ;

@@ -1,0 +1,6 @@
+--------------------------------------------------------
+--  Constraints for Table Z_T_RP_ETIQUETESCAMPSESPECIALS
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_ETIQUETESCAMPSESPECIALS" MODIFY ("INSTALACIOID" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_T_RP_ETIQUETESCAMPSESPECIALS" MODIFY ("ETIQUETACAMPESPECIALID" NOT NULL ENABLE);

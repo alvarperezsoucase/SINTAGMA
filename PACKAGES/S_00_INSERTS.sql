@@ -1,0 +1,110 @@
+--------------------------------------------------------
+--  DDL for Package S_00_INSERTS
+--------------------------------------------------------
+
+  CREATE OR REPLACE PACKAGE "SINTAGMA_U"."S_00_INSERTS" AS 
+  /* SE SUSTITUYE IDs originales por secuencias */  
+     ConstUsuari_CREACIO varchar2(10) := 'SYSTEM';
+     
+     ConstAMBIT_ALCALDIA CONSTANT integer:=1; 
+--      ConstAMBIT_PROTOCOL CONSTANT integer:=2; 
+
+
+
+PROCEDURE RESETEATOR_TABLAS; --OJO BORRAR TODAS LAS TABLAS.
+
+PROCEDURE CLASSIF_ACTIVES;
+
+--PROCEDURE A1_PARAMETRE;
+
+
+PROCEDURE A1_DM_AMBIT;
+
+PROCEDURE A1_DM_CONF_FUN_VISUALS;
+--------------------------------------------------------
+-- TRUCADA
+--------------------------------------------------------
+
+PROCEDURE A1_DM_ESTAT_TRUCADA;
+
+PROCEDURE A1_DM_SENTIT_TRUCADA;
+
+--------------------------------------------------------
+-- CONTACTES
+--------------------------------------------------------
+
+PROCEDURE A1_DM_TIPUS_TELEFON;
+
+PROCEDURE A1_DM_TIPUS_SUBJECTE;
+
+PROCEDURE A1_DM_PRIORITAT;
+
+PROCEDURE A1_DM_TIPOLOGIA_OBSEQUI;
+
+PROCEDURE A1_DM_OBSEQUI;
+
+PROCEDURE A1_DM_VISIBILITAT;
+
+PROCEDURE A1_DM_TIPUS_CONTACTE;
+
+PROCEDURE A1_DM_IDIOMA;
+
+PROCEDURE A1_DM_TIPOLOGIA_CLASSIFICACIO;
+
+
+
+PROCEDURE A1_DM_AFECTA_AGENDA;
+
+PROCEDURE A1_DM_TIPUS_AMBIT;
+
+PROCEDURE A1_DM_SECTOR;
+
+PROCEDURE A1_DM_DECISIO_ASSISTENCIA;
+
+PROCEDURE A1_DM_RAO;
+
+PROCEDURE A1_DM_ARTICLE;
+
+
+
+--------------------------------------------------------
+-- ACTES
+--------------------------------------------------------
+
+PROCEDURE A1_DM_ESTAT_CONFIRMACIO;
+
+PROCEDURE A1_DM_TIPUS_VIA_INVITACIO;
+
+PROCEDURE A1_DM_INICIATIVA_RESPOSTA;
+
+PROCEDURE A1_DM_TIPUS_VIA_RESPOSTA;
+
+PROCEDURE A1_DM_ESTAT_GESTIO_INVITACIO;
+
+PROCEDURE A1_DM_ESTAT_GESTIO_ESPAIS;
+
+PROCEDURE A1_DM_ESTAT_ELEMENT;
+
+-- PROCEDURE A1_DM_PAS_ACCIO;
+
+PROCEDURE A1_DM_TIPUS_AGENDA;
+
+PROCEDURE A1_DM_ORIGEN_ELEMENT;
+
+PROCEDURE A1_DM_TIPUS_DATA;
+
+PROCEDURE A1_ESTAT_ACTE;
+
+
+------------------------------------------------
+-- TEMES 
+-------------------------------------------------
+
+PROCEDURE A1_DM_DISTRICTE;
+
+PROCEDURE A1_DM_BARRI;
+
+
+END S_00_INSERTS;
+
+/

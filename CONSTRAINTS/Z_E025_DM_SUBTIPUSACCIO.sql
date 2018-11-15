@@ -1,0 +1,7 @@
+--------------------------------------------------------
+--  Constraints for Table Z_E025_DM_SUBTIPUSACCIO
+--------------------------------------------------------
+
+  ALTER TABLE "SINTAGMA_U"."Z_E025_DM_SUBTIPUSACCIO" MODIFY ("TIPUS_ACCIO_ID" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_E025_DM_SUBTIPUSACCIO" MODIFY ("DESCRIPCIO" NOT NULL ENABLE);
+  ALTER TABLE "SINTAGMA_U"."Z_E025_DM_SUBTIPUSACCIO" MODIFY ("ID" NOT NULL ENABLE);
